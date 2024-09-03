@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nuestros Productos</h1>
+        <div class="cart">
+            <span>Carrito: </span><span id="cart-count">0</span>
+        </div>
+    </header>
+    <section id="products">
+        <!-- Productos -->
+        <div class="product" data-category="suculentas">
+            <img src="suculenta1.jpg" alt="Suculenta 1">
+            <h3>Suculenta 1</h3>
+            <p>$10</p>
+            <button onclick="addToCart(1)">Añadir a la cesta</button>
+        </div>
+        <!-- Repetir para las 5 plantas restantes -->
+    </section>
+</body>
+<script src="redux.js"></script> <!-- Integrar Redux -->
+<script src="index.js"></script> <!-- Funciones JS -->
+</html>
